@@ -4,11 +4,16 @@ public abstract class Animals {
     protected String name;
     protected int swimLimit;
     protected int runLimit;
+   static int anim=0;
 
     public Animals(String name, int runLimit, int swimLimit) {
         this.name = name;
         this.swimLimit = swimLimit;
         this.runLimit = runLimit;
+        anim++;
+    }
+    public static void anim(){
+        System.out.println(anim);
     }
 
     public boolean run(int runDistance) {

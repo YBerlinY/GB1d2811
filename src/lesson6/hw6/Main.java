@@ -13,6 +13,9 @@ public class Main {
          animals.add(new Dog("dog2",100,150));
          animals.add(new Dog("dog3",300,150));
 
+         Animals.anim();
+         Cat.c();
+         Dog.d();
 
       for (int i = 0; animals.size()>1; i++) {
          for (int j = 0; j <animals.size(); j++) {
