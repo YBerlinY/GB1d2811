@@ -1,17 +1,16 @@
-package lesson1.hw1;
+package Java1.lesson1.hw1;
 
 
 public class HomeWorkApp {
     public static void main(String[] args) {
         printThreeWords();
-        checkSumSign();
-        printColor();
-        compareNumbers();
+        checkSumSign(5,7);
+        printColor(34);
+        compareNumbers(56,27);
     }
 
-    private static void compareNumbers() {
-        int a = 56;
-        int b = 27;
+    private static void compareNumbers(int a,int b) {
+
         if (a >= b) {
             System.out.printf("%d>=%d", a, b);
         } else {
@@ -19,8 +18,7 @@ public class HomeWorkApp {
         }
     }
 
-    private static void printColor() {
-        int value = 34;
+    private static void printColor(int value) {
         if (value <= 0) {
             System.out.println("Красный");
         } else if (0 < value || value <= 100) {
@@ -30,9 +28,8 @@ public class HomeWorkApp {
         }
     }
 
-    private static void checkSumSign() {
-        int a = 5;
-        int b = 7;
+    private static void checkSumSign(int a,int b) {
+
         if (a + b >= 0) {
             System.out.println("Сумма положительная");
         } else {
